@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <link href="../static/css/style.css" th:href="@{static.css}" rel="stylesheet"/>
+    <link href="../static/css/style.css" th:href="@{/css/style.css}" rel="stylesheet"/>
 
     <title>Book list</title>
 
@@ -50,8 +50,8 @@
         </a>
     </div>
     <div class="search_bar">
-        <form th:action="@{/findbytitleorauthor}" th:object="${book}" method="get"> Search for book:
-            <input type="text" placeholder="Search.." name="search"/>
+        <form action="#" th:action="@{/findBook}" th:object="${books}" method="get"> Search for book:
+            <input type="text" placeholder="Search.." name="param">
             <button type="submit">Submit</button>
         </form>
     </div>
@@ -93,18 +93,18 @@
                     </div>
 
                     <div sec:authorize="hasRole('ROLE_USER')">
-                    <a th:href="@{/borrowbook(bookId=${booksfromsearch.id})}"
-                       class="update_button">
-                        Borrow
-                    </a>
-                </div>
+                        <a th:href="@{/borrowbook(bookId=${booksfromsearch.id})}"
+                           class="update_button">
+                            Borrow
+                        </a>
+                    </div>
 
-<!--                    <div sec:authorize="hasRole('ROLE_USER')">-->
-<!--                        <a th:href="@{/returnbook(bookId=${tempBook.id})}"-->
-<!--                           class="delete_button">-->
-<!--                            Return-->
-<!--                        </a>-->
-<!--                    </div>-->
+                    <!--                    <div sec:authorize="hasRole('ROLE_USER')">-->
+                    <!--                        <a th:href="@{/returnbook(bookId=${tempBook.id})}"-->
+                    <!--                           class="delete_button">-->
+                    <!--                            Return-->
+                    <!--                        </a>-->
+                    <!--                    </div>-->
                 </td>
             </div>
 
