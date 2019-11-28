@@ -32,7 +32,7 @@ public class BookController {
     @GetMapping("/showallbooks")
     private String showAllBooks(Model model) {
         model.addAttribute("books", bookRepo.findAll());
-        return "/showbooks";
+        return "showbooks";
     }
 
     @GetMapping("/findBook")
