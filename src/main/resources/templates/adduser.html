@@ -23,7 +23,7 @@
     <nav>
         <div>
             <ul>
-                <li><a class="menu_button" th:href="@{/startpage}">Home</a></li>
+                <li><a class="menu_button" th:href="@{/}">Home</a></li>
                 <li><a class="menu_button" th:href="@{/showallbooks}">Book list</a></li>
                 <li><a class="menu_button" th:href="@{/usergui}">User Panel</a></li>
                 <li><a th:if="!${#request.userPrincipal}" class="menu_button" th:href="@{/login}">Login</a>
@@ -57,7 +57,7 @@
 
 <div>
     <hr>
-    <a th:href="@{/startpage}">Back to Home panel</a>
+    <a th:href="@{/}">Back to Home panel</a>
 
 </div>
 <hr>
