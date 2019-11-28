@@ -98,6 +98,6 @@ public class UserController {
         if (param == "") {
             return "redirect:/showuserbooks";
         }
-        return "/showuserbooks";
+        return "showuserbooks";
     }
 }

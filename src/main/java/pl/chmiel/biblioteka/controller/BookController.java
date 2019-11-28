@@ -25,7 +25,7 @@ public class BookController {
     private String bookProfile(@ModelAttribute("bookId") Book book, Model model, Long theId) {
         bookRepo.findById(theId = 1l);
         model.addAttribute("title", book.getTitle());
-        return "/bookprofile";
+        return "bookprofile";
     }
 
 
@@ -42,7 +42,7 @@ public class BookController {
         if (param == "") {
             return "redirect:/showallbooks";
         }
-        return "/showbooks";
+        return "showbooks";
     }
 
     @PostMapping("/addbook")
