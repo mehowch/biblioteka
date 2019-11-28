@@ -1182,3 +1182,7 @@ select book0_.id as id1_0_, book0_.author as author2_0_, book0_.title as title3_
 org.h2.jdbc.JdbcSQLDataException: Błąd konwersji danych "Novel"
 Data conversion error converting "Novel"; SQL statement:
 select book0_.id as id1_0_, book0_.author as author2_0_, book0_.title as title3_0_, book0_.year as year4_0_ from book book0_ where book0_.title=? or book0_.author=? or book0_.year=? [22018-199]
+2019-11-28 23:33:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Błąd konwersji danych "Novel"
+Data conversion error converting "Novel"; SQL statement:
+select book0_.id as id1_0_, book0_.author as author2_0_, book0_.title as title3_0_, book0_.year as year4_0_ from book book0_ where book0_.title=? or book0_.author=? or book0_.year=? [22018-199]
