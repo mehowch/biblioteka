@@ -6,7 +6,7 @@ Project won 2nd place in Open Competition organised via one of ours teachers Prz
 <u>Creators:</u>
 <ul><li>Michał Chmielewski <a href="https://github.com/mehowch">github profile</a></li><li>Michał Skrzypczak <a href="https://github.com/P3droCi7">github profile</a></li></ul>
 
-Application deployed on Heroku: <a href="https://librarysda.herokuapp.com/startpage">Library Project</a>
+Application deployed on Heroku: <a href="https://the-library-project.herokuapp.com/">Library Project</a>
 <br>
 Application uses H2 DB file with create-drop parameter.
 H2 DB initialized with sample book and user data:
